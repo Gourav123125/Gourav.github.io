@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gourav | Data Scientist & ML Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", "system-ui", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans">
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-20 bg-slate-950/80 backdrop-blur border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="font-semibold tracking-tight text-slate-100">
+       Gourav <span class="text-emerald-400"></span>
+      </a>
+      <nav class="hidden md:flex gap-6 text-sm text-slate-300">
+        <a href="#home" class="hover:text-emerald-400 transition">Home</a>
+        <a href="#projects" class="hover:text-emerald-400 transition">Projects</a>
+        <a href="#skills" class="hover:text-emerald-400 transition">Skills</a>
+        <a href="#about" class="hover:text-emerald-400 transition">About</a>
+        <a href="#contact" class="hover:text-emerald-400 transition">Contact</a>
+      </nav>
+      <a
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=gouravbh786@gmail.com"
+        target="_blank"
+        class="hidden md:inline-flex text-xs px-3 py-1.5 rounded-full border border-emerald-400/50 text-emerald-300 hover:bg-emerald-400/10 transition"
+      >
+        Let’s Connect
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 pt-24 pb-16" id="home">
+    <!-- Hero -->
+    <section class="py-10 md:py-16 flex flex-col md:flex-row gap-10 items-center">
+      <!-- Left: Intro -->
+      <div class="flex-1 order-2 md:order-1">
+        <p class="text-xs uppercase tracking-[0.2em] text-emerald-400">
+          Data Scientist
+        </p>
+        <h1 class="mt-4 text-3xl md:text-5xl font-semibold tracking-tight">
+          Turning data into intelligent solutions
+          <span class="text-emerald-400">that solve real-world problems.</span>
+        </h1>
+        <p class="mt-4 text-slate-300 text-sm md:text-base max-w-xl">
+          I'm <span class="font-medium">Gourav Bhatia</span>,a pre-final year B.Tech (AI/ML) student passionate about machine learning, data analysis, and building real-world AI applications. I specialize in transforming raw data into actionable insights, developing predictive models, and creating data-driven solutions that solve practical problems.
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a
+            href="#projects"
+            class="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-emerald-500 text-slate-950 text-sm font-medium hover:bg-emerald-400 transition"
+          >
+            View My Projects
+          </a>
+          <a
+            href="Gourav RESUME.pdf"
+            class="inline-flex items-center justify-center px-5 py-2.5 rounded-full border border-slate-700 text-sm text-slate-200 hover:border-emerald-400 hover:text-emerald-300 transition"
+          >
+            Download CV
+          </a>
+        </div>
+
+        <div class="mt-6 flex flex-wrap gap-4 text-xs text-slate-400">
+          <span class="inline-flex items-center gap-2">
+            
+          </span>
+          <span class="inline-flex items-center gap-2">
+            ☁️ Oracle Certified Data Science Professional
+          </span>
+          <span class="inline-flex items-center gap-2">
+            🎓 B.Tech CSE (AI & ML)
+          </span>
+        </div>
+      </div>
+
+      <!-- Right: Profile + Visualization Card -->
+      <div class="flex-1 max-w-sm w-full order-1 md:order-2">
+        <div class="rounded-3xl border border-slate-800 bg-gradient-to-br from-slate-900 to-slate-950 p-5 shadow-xl space-y-5">
+          <!-- Profile block -->
+          <div class="flex flex-col items-center gap-3">
+            <div class="h-24 w-24 rounded-full overflow-hidden border-2 border-emerald-500 shadow-lg shadow-emerald-500/30">
+              <img
+                src="Profile.jpg"
+                alt="Gourav"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <div class="text-center">
+              <p class="text-sm font-semibold text-slate-100">Gourav</p>
+              <p class="text-xs text-slate-400">Data Scientist</p>
+            </div>
+          </div>
+
+          <div class="border-t border-slate-800 pt-4">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="h-10 w-10 rounded-full bg-slate-800 flex items-center justify-center text-xl">
+                🧪
+              </div>
+              <div>
+                <p class="text-sm font-medium text-slate-100">Model Performance</p>
+                <p class="text-xs text-slate-400">Recent project metrics</p>
+              </div>
+            </div>
+
+            <!-- Fake chart / KPI block -->
+            <div class="space-y-3 text-xs">
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">Image Based Breed Recognition</span>
+                <span class="font-semibold text-emerald-400">94% acc</span>
+              </div>
+              <div class="h-2 w-full rounded-full bg-slate-800 overflow-hidden">
+                <div class="h-full w-[94%] bg-emerald-500"></div>
+              </div>
+
+              <div class="flex items-center justify-between">
+              <span class="text-slate-400">Sign language Detection</span>
+              <span class="font-semibold text-emerald-400">98% acc</span>
+            </div>
+              <div class="h-2 w-full rounded-full bg-slate-800 overflow-hidden">
+                <div class="h-full w-[98%] bg-emerald-500"></div>
+              </div>
+
+              <div class="mt-4 rounded-2xl border border-slate-800 bg-slate-900/60 p-3">
+                <p class="text-xs text-slate-300 mb-1">
+                  AI • ML • Data Analytics • Real-world Solutions
+                </p>
+                <p class="text-[11px] text-slate-400">
+                  Delivering high-accuracy AI/ML solutions using data-driven insights, predictive modeling, and real-world analytics.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="py-12 border-y border-slate-800">
+  <h2 class="text-xl md:text-2xl font-semibold mb-6 flex items-center gap-2">
+    Skills at a Glance
+    <span class="text-xs font-medium text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded-full">
+      Core Stack
+    </span>
+  </h2>
+
+  <div class="grid md:grid-cols-3 gap-6 text-sm">
+
+    <!-- Languages -->
+    <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+      <p class="text-xs uppercase tracking-[0.2em] text-slate-400 mb-2">Languages & Databases</p>
+      <p class="text-slate-100 font-medium mb-3">Programming & Querying</p>
+      <div class="flex flex-wrap gap-2 text-[11px] text-emerald-300">
+        <span class="px-2 py-1 rounded-full bg-slate-800 text-xs">Python</span>
+        <span class="px-2 py-1 rounded-full bg-slate-800 text-xs">C/C++</span>
+        <span class="px-2 py-1 rounded-full bg-slate-800 text-xs">MySQL</span>
+      </div>
+    </div>
+
+    <!-- ML & Data Science -->
+    <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+      <p class="text-xs uppercase tracking-[0.2em] text-slate-400 mb-2">Machine Learning & Data Science</p>
+      <p class="text-slate-100 font-medium mb-3">Modeling & Analysis</p>
+     <div class="flex flex-wrap gap-2 text-[11px] text-emerald-300">
+        <span class="px-2 py-1 rounded-full bg-slate-800 text-xs">Scikit-learn</span>
+        <span class="px-2 py-1 rounded-full bg-slate-800 text-xs">NumPy</span>
+        <span class="px-2 py-1 rounded-full bg-slate-800 text-xs">Pandas</span>
+        <span class="px-2 py-1 rounded-full bg-slate-800 text-xs">SciPy</span>
+        <span class="px-2 py-1 rounded-full bg-slate-800 text-xs">NLP</span>
+      </div>
+    </div>
+
+    <!-- Deep Learning & CV -->
+    <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+      <p class="text-xs uppercase tracking-[0.2em] text-slate-400 mb-2">Deep Learning & Computer Vision</p>
+      <p class="text-slate-100 font-medium mb-3">AI Model Development</p>
+      <div class="flex flex-wrap gap-2 text-[11px] text-emerald-300">
+        <span class="px-2 py-1 rounded-full bg-slate-800 text-xs">TensorFlow</span>
+        <span class="px-2 py-1 rounded-full bg-slate-800 text-xs">Keras</span>
+        <span class="px-2 py-1 rounded-full bg-slate-800 text-xs">OpenCV</span>
+        <span class="px-2 py-1 rounded-full bg-slate-800 text-xs">Deep Learning</span>
+        <span class="px-2 py-1 rounded-full bg-slate-800 text-xs">Scikit-Image</span>
+      </div>
+    </div>
+
+    <!-- Visualization -->
+    <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+      <p class="text-xs uppercase tracking-[0.2em] text-slate-400 mb-2">Data Visualization</p>
+      <p class="text-slate-100 font-medium mb-3">Insights & Reporting</p>
+      <div class="flex flex-wrap gap-2 text-[11px] text-emerald-300">
+        <span class="px-2 py-1 rounded-full bg-slate-800 text-xs">Matplotlib</span>
+        <span class="px-2 py-1 rounded-full bg-slate-800 text-xs">Seaborn</span>
+      </div>
+    </div>
+
+    <!-- Cloud & Tools -->
+    <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+      <p class="text-xs uppercase tracking-[0.2em] text-slate-400 mb-2">Cloud & Tools</p>
+      <p class="text-slate-100 font-medium mb-3">Deployment & Version Control</p>
+      <div class="flex flex-wrap gap-2 text-[11px] text-emerald-300">
+        <span class="px-2 py-1 rounded-full bg-emerald-400/10 border border-emerald-500/40">BigQuery</span>
+        <span class="px-2 py-1 rounded-full bg-slate-800 text-xs">GCE</span>
+        <span class="px-2 py-1 rounded-full bg-slate-800 text-xs">Cloud Storage</span>
+        <span class="px-2 py-1 rounded-full bg-slate-800 text-xs">GitHub</span>
+        <span class="px-2 py-1 rounded-full bg-slate-800 text-xs">GitLab</span>
+      </div>
+    </div>
+
+    <!-- Professional Skills -->
+    <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+      <p class="text-xs uppercase tracking-[0.2em] text-slate-400 mb-2">Professional Skills</p>
+      <p class="text-slate-100 font-medium mb-3">Leadership & Communication</p>
+      <div class="flex flex-wrap gap-2 text-[11px] text-emerald-300">
+        <span class="px-2 py-1 rounded-full bg-emerald-400/10 border border-emerald-500/40">Leadership</span>
+        <span class="px-2 py-1 rounded-full bg-emerald-400/10 border border-emerald-500/40">Project Management</span>
+        <span class="px-2 py-1 rounded-full bg-emerald-400/10 border border-emerald-500/40">Public Speaking</span>
+        <span class="px-2 py-1 rounded-full bg-emerald-400/10 border border-emerald-500/40">Stakeholder Engagement</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-14">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-xl md:text-2xl font-semibold">Featured Projects</h2>
+        <span class="text-xs text-slate-400">
+          Curated selection of applied ML, DL & AI work
+        </span>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+      <!-- Project 1 -->
+<article class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4 hover:-translate-y-1 transition duration-300">
+
+  <!-- Heading + GitHub -->
+  <div class="flex items-start justify-between gap-4">
+
+    <h3 class="text-base font-semibold text-slate-50 leading-snug">
+      Sign Language Detection System
+    </h3>
+
+    <a href="https://github.com/Gourav123125/Sign-Language-Detection-Model.git"
+      target="_blank"
+      class="shrink-0 inline-flex items-center gap-1 px-3 py-1 text-xs rounded-full border border-slate-700 hover:border-emerald-400 hover:text-emerald-300 transition">
+      💻 GitHub
+    </a>
+
+  </div>
+
+  <!-- Description -->
+  <p class="mt-2 text-sm text-slate-300">
+    Developed a deep learning-based system to detect and classify sign language gestures. Implemented real-time detection and improved accuracy using data augmentation techniques.
+  </p>
+
+  <!-- Image BELOW text -->
+  <img src="sign.jpeg"
+       alt="Sign Language Detection"
+       class="mt-3 w-full h-48 object-contain">
+
+</article>
+
+<!-- Project 2 -->
+<article class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-4 hover:-translate-y-1 transition duration-300">
+
+  <div class="flex items-start justify-between gap-4">
+    <h3 class="text-base font-semibold text-slate-50">
+      Image-Based Breed Recognition System
+    </h3>
+
+    <a href="https://github.com/Gourav123125/Image-Based-Breed-Recognition-System-for-Cattles-and-Buffalos.git"
+      target="_blank"
+      class="shrink-0 inline-flex items-center gap-1 px-3 py-1 text-xs rounded-full border border-slate-700 hover:border-emerald-400 hover:text-emerald-300 transition">
+      💻 GitHub
+    </a>
+  </div>
+
+  <p class="mt-2 text-sm text-slate-300">
+    Built an AI-based system to identify cattle and buffalo breeds using CNN models, trained on real-world datasets for accurate classification in farm conditions.
+  </p>
+
+
+  <div class="mt-3 h-48 w-full rounded-xl border border-slate-800 bg-slate-800 flex items-center justify-center">
+  <img src="breed.png"
+       class="w-full h-auto object-contain">
+</article>
+
+
+<!-- Project 3 -->
+<article class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-4 hover:-translate-y-1 transition duration-300">
+
+  <div class="flex items-start justify-between gap-4">
+    <h3 class="text-base font-semibold text-slate-50">
+      Stock Market Price Predictor
+    </h3>
+
+    <a href="https://github.com/Gourav123125/Stock-Predictor.git"
+      target="_blank"
+      class="shrink-0 inline-flex items-center gap-1 px-3 py-1 text-xs rounded-full border border-slate-700 hover:border-emerald-400 hover:text-emerald-300 transition">
+      💻 GitHub
+    </a>
+  </div>
+
+  <p class="mt-2 text-sm text-slate-300">
+    Developed a machine learning model to predict stock prices using historical data and feature engineering techniques.
+  </p>
+  <div class="mt-4 flex justify-center">
+  <img src="stock.jpeg"
+       class="mt-6 max-h-52 w-auto object-contain rounded-xl">
+</div>
+</article>
+
+
+<!-- Project 4 -->
+<article class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-4 hover:-translate-y-1 transition duration-300">
+
+  <div class="flex items-start justify-between gap-4">
+    <h3 class="text-base font-semibold text-slate-50">
+      Blinkit Sales Dashboard
+    </h3>
+
+    <a href="https://github.com/Gourav123125/Blinkit-Sales-Dashboard.git"
+      target="_blank"
+      class="shrink-0 inline-flex items-center gap-1 px-3 py-1 text-xs rounded-full border border-slate-700 hover:border-emerald-400 hover:text-emerald-300 transition">
+      💻 GitHub
+    </a>
+  </div>
+
+  <p class="mt-2 text-sm text-slate-300">
+    Designed an interactive dashboard to analyze sales performance and generate business insights using data visualization techniques.
+  </p>
+
+  
+  <img src="blinkit.png"
+       class="mt-4 max-h-52 w-auto object-contain rounded-xl">
+</article>
+<!-- Achievements Section -->
+<section id="achievements" class="py-14">
+  <div class="flex items-center justify-between mb-6">
+    <h2 class="text-xl md:text-2xl font-semibold">Achievements</h2>
+    <span class="text-xs text-slate-400">
+      Milestones & Recognition
+    </span>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+    <!-- Achievement 1 -->
+    <div class="group rounded-2xl border border-slate-800 bg-slate-900/60 overflow-hidden hover:-translate-y-2 transition duration-300">
+      <img src="cm.jpeg" class="h-48 w-full object-cover group-hover:scale-105 transition duration-300">
+      <div class="p-4">
+        <p class="text-sm font-semibold text-slate-100">
+          Presented Startup to CM Haryana
+        </p>
+        <p class="text-xs text-slate-400 mt-1">
+          Showcased Innovation at State level
+        </p>
+      </div>
+    </div>
+    
+
+    <!-- Achievement 2 -->
+    <div class="group rounded-2xl border border-slate-800 bg-slate-900/60 overflow-hidden hover:-translate-y-2 transition duration-300">
+      <img src="vc.jpeg" class="h-48 w-full object-cover group-hover:scale-105 transition duration-300">
+      <div class="p-4">
+        <p class="text-sm font-semibold text-slate-100">
+          Awarded by Vice Chancellor
+        </p>
+        <p class="text-xs text-slate-400 mt-1">
+          Awarded for Startup Innovation
+        </p>
+        
+      </div>
+      
+      
+    </div>
+    <!-- Achievement: Sports -->
+<div class="group rounded-2xl border border-slate-800 bg-slate-900/60 overflow-hidden hover:-translate-y-2 transition duration-300">
+  
+  <img src="TT.jpeg"
+       class="h-48 w-full object-cover group-hover:scale-105 transition duration-300">
+
+  <div class="p-4">
+    <p class="text-sm font-semibold text-slate-100">
+      Sports Achievement – Table Tennis
+    </p>
+
+    <p class="text-xs text-slate-400 mt-1">
+    Participated in Inter-university Sports competition.
+    </p>
+    
+  </div>
+</div>
+    <!-- Achievement 3 -->
+    <div class="group rounded-2xl border border-slate-800 bg-slate-900/60 overflow-hidden hover:-translate-y-2 transition duration-300">
+      <img src="minister.jpeg" class="h-48 w-full object-cover group-hover:scale-110 group-hover:rotate-1 transition duration-500">
+      <div class="p-4">
+        <p class="text-sm font-semibold text-slate-100">
+          Presented Startup to Dr. Jitendra Singh
+        </p>
+        <p class="text-xs text-slate-400 mt-1">
+          Hon’ble Union Minister of Science & Technology
+        </p>
+      </div>
+    </div>
+    </div>
+
+  </div>
+  
+</section>
+    <!-- Experience, About & Certifications -->
+    <section id="about" class="py-12 border-y border-slate-800">
+      <div class="grid md:grid-cols-2 gap-10">
+        <!-- Experience -->
+        <div>
+          <h2 class="text-xl md:text-2xl font-semibold mb-4">Experience</h2>
+          <div class="space-y-5 text-sm">
+            <div>
+              <p class="font-medium text-slate-100">
+                Data Science Intern · Codec Technologies Pvt. Ltd.
+              </p>
+              <p class="text-xs text-slate-400">Jun 2025 – August 2025</p>
+              <ul class="mt-2 list-disc list-inside text-slate-300 space-y-1">
+                <li>Worked on data analysis and machine learning tasks using Python and relevant libraries</li>
+                <li>Performed data cleaning, preprocessing, and exploratory data analysis (EDA) on real-world datasets</li>
+        
+              </ul>
+            </div>
+
+            <div>
+              <p class="font-medium text-slate-100">
+                Python Development Intern · Octanet Services Pvt. Ltd.
+              </p>
+              <p class="text-xs text-slate-400">Aug 2024 – Sept 2024</p>
+              <ul class="mt-2 list-disc list-inside text-slate-300 space-y-1">
+                <li>Developed Python-based applications to solve real-world problem statements and improve logical thinking.</li>
+<li>Implemented core programming concepts including data structures, functions, and file handling.</li>
+
+              </ul>
+            </div>
+
+            <div>
+              <p class="font-medium text-slate-100">
+               Director · Trackila Smart Innovations Pvt. Ltd.
+              </p>
+              <p class="text-xs text-slate-400">Jan 2025 – Apr 2025</p>
+              <ul class="mt-2 list-disc list-inside text-slate-300 space-y-1">
+                <li>Led the development of smart transportation solutions focused on improving public mobility.</li>
+<li>Managed product strategy, innovation, and technical execution to align with business goals.</li>
+              </ul>
+            </div>
+
+            <div>
+              <p class="font-medium text-slate-100">
+               Student Ambassador · Google
+              </p>
+              <p class="text-xs text-slate-400">Jul 2024 – Aug 2024</p>
+              <ul class="mt-2 list-disc list-inside text-slate-300 space-y-1">
+                <li>Promoted Google Gemini AI tools to increase awareness and adoption among students on campus.</li>
+<li>Conducted sessions on AI applications, productivity tools, and real-world use cases using Gemini.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: About, Education, Certifications -->
+        <div class="space-y-6">
+          <!-- About & Education -->
+          <div>
+            <h2 class="text-xl md:text-2xl font-semibold mb-4">About & Education</h2>
+            <p class="text-sm text-slate-300 mb-4">
+              I specialize in transforming data into scalable, real-world solutions. My work spans predictive modeling, deep learning,
+              computer vision, and applied AI, with a strong focus on building systems that deliver measurable impact. I enjoy solving
+              complex problems at the intersection of analytics, engineering, and product, turning raw data into actionable intelligence.
+            </p>
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4 text-sm">
+              <p class="font-medium text-slate-100">
+                B.Tech · Computer Science & Engineering (AI & ML)
+              </p>
+              <p class="text-xs text-slate-400">Shri Vishwakarma Skill University, Haryana · CGPA: 8.16/10</p>
+              <p class="mt-2 text-slate-300 text-xs">
+                Relevant coursework: OOP, DSA, Databases, Machine Learning, Deep Learning,
+                Data Analytics, Cloud Computing.
+              </p>
+            </div>
+
+            <div class="mt-4 rounded-2xl border border-slate-800 bg-slate-900/70 p-4 text-sm">
+  <p class="font-medium text-slate-100">
+    Super 30 Entrepreneurship Development Program
+  </p>
+  <p class="text-xs text-slate-400">
+    Mar 2024 – Mar 2025
+  </p>
+
+  <p class="mt-2 text-slate-300 text-xs">
+    One-year intensive program focused on startup development, innovation, and business strategy.
+  </p>
+
+  <p class="mt-1 text-slate-300 text-xs">
+    Built and presented startup ideas under expert mentorship, gaining hands-on experience in entrepreneurship and product development.
+  </p>
+</div>
+          <div class="mt-6 rounded-2xl border border-slate-800 bg-gradient-to-br from-slate-900 to-slate-950 p-5 relative overflow-hidden">
+
+  <!-- Glow effect -->
+  <div class="absolute -top-10 -right-10 w-40 h-40 bg-emerald-500/10 rounded-full blur-3xl"></div>
+
+  <!-- Header -->
+  <div class="flex items-center gap-3 mb-3">
+    <div class="h-10 w-10 rounded-full bg-slate-800 flex items-center justify-center text-lg">
+      🧠
+    </div>
+    <div>
+      <p class="text-sm font-semibold text-slate-100">Currently Building</p>
+      <p class="text-xs text-emerald-400">Active Project</p>
+    </div>
+  </div>
+
+  <!-- Title -->
+  <p class="text-sm font-medium text-slate-100 mb-2">
+    Deepfake Detection System (Image & Video)
+  </p>
+
+  <!-- Description -->
+  <p class="text-xs text-slate-400 leading-relaxed">
+    Developing an AI-based system to detect manipulated media using deep learning techniques. 
+    Focused on identifying synthetic patterns in both images and videos to improve digital content authenticity and security.
+  </p>
+
+  <!-- Tags -->
+  <div class="mt-4 flex flex-wrap gap-2 text-[11px]">
+    <span class="px-2 py-1 rounded-full bg-slate-800 text-slate-200">Deep Learning</span>
+    <span class="px-2 py-1 rounded-full bg-slate-800 text-slate-200">Computer Vision</span>
+    <span class="px-2 py-1 rounded-full bg-slate-800 text-slate-200">CNN</span>
+    <span class="px-2 py-1 rounded-full bg-slate-800 text-slate-200">Video Processing</span>
+  </div>
+
+</div>
+        </section>
+        
+          <!-- Certifications Section -->
+<section id="certifications" class="py-14 fade-in">
+  <div class="flex items-center justify-between mb-6">
+    <h2 class="text-xl md:text-2xl font-semibold">Certifications</h2>
+    <span class="text-xs text-slate-400">
+      Verified Learning & Credentials
+    </span>
+  </div>
+
+  <div class="grid md:grid-cols-4 gap-6">
+<!-- Oracle Certification -->
+<a href="oracle.pdf" download class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-4 hover:-translate-y-2 transition duration-300">
+  <img src="oracle certificate.png" class="h-32 w-full object-cover rounded-lg mb-3 group-hover:scale-105 transition duration-300">
+  
+  <p class="text-sm font-semibold text-slate-100">
+    Oracle Certified Data Science Professional
+  </p>
+  
+  <p class="text-xs text-slate-400 mt-1">
+    Oracle Cloud Infrastructure 2025
+  </p>
+</a>
+    <!-- Octanet Internship -->
+    <a href="Octanet Certificate.pdf" download class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-4 hover:-translate-y-2 transition duration-300">
+      <img src="octanet.png" class="h-32 w-full object-cover rounded-lg mb-3 group-hover:scale-105 transition duration-300">
+      <p class="text-sm font-semibold text-slate-100">
+        Python Development Internship
+      </p>
+      <p class="text-xs text-slate-400 mt-1">
+        Octanet Services Pvt. Ltd.
+      </p>
+    </a>
+
+    <!-- Codec Internship -->
+    <a href="codec.pdf" download class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-4 hover:-translate-y-2 transition duration-300">
+      <img src="codec.jpeg" class="h-32 w-full object-cover rounded-lg mb-3 group-hover:scale-105 transition duration-300">
+      <p class="text-sm font-semibold text-slate-100">
+        Data Science Internship
+      </p>
+      <p class="text-xs text-slate-400 mt-1">
+        Codec Technologies Pvt. Ltd.
+      </p>
+    </a>
+
+    <!-- Google Cloud -->
+    <a href="Cloud Certificate.pdf" download class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-4 hover:-translate-y-2 transition duration-300">
+      <img src="cloud.png" class="h-32 w-full object-cover rounded-lg mb-3 group-hover:scale-105 transition duration-300">
+      <p class="text-sm font-semibold text-slate-100">
+        Google Cloud Skills Boost
+      </p>
+      <p class="text-xs text-slate-400 mt-1">
+        Arcade Trooper · 60+ Badges
+      </p>
+    </a>
+
+    <!-- Deloitte -->
+    <a href="deloitee job simulation.pdf" download class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-4 hover:-translate-y-2 transition duration-300">
+      <img src="Simulation.png" class="h-32 w-full object-cover rounded-lg mb-3 group-hover:scale-105 transition duration-300">
+      <p class="text-sm font-semibold text-slate-100">
+        Deloitte Data Analytics Simulation
+      </p>
+      <p class="text-xs text-slate-400 mt-1">
+        Forage
+      </p>
+    </a>
+
+  </div>
+</section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="py-12">
+      <h2 class="text-xl md:text-2xl font-semibold mb-3">Contact:-</h2>
+      <p class="text-sm text-slate-300 mb-4">
+        Open to data science, ML engineering, and AI research roles, as well as collaborations on impactful AI projects.
+      </p>
+      <div class="flex flex-wrap gap-3 text-sm">
+        <a
+          href="mailto:ksood315@gmail.com"
+          class="inline-flex items-center px-4 py-2 rounded-full border border-slate-700 hover:border-emerald-400 hover:text-emerald-300 transition"
+        >
+          ✉️ gouravbh786@gmail.com
+        </a>
+        <a
+          href="https://github.com/Gourav123125"
+          class="inline-flex items-center px-4 py-2 rounded-full border border-slate-700 hover:border-emerald-400 hover:text-emerald-300 transition"
+        >
+          🧑‍💻 github.com/Gourav123125
+        </a>
+        <a
+          href="https://www.linkedin.com/in/gourav-bhatia-418ba0289"
+          class="inline-flex items-center px-4 py-2 rounded-full border border-slate-700 hover:border-emerald-400 hover:text-emerald-300 transition"
+        >
+          🔗 LinkedIn Profile
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 py-4">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-center text-[11px] text-slate-500 gap-2">
+    <span>© <span id="year"></span> Gourav. All rights reserved.</span>
+  </div>
+</footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
